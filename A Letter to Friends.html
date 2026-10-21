@@ -1,0 +1,127 @@
+<meta name="claude:viewport-fit-sides" content="cover">
+<title>A Letter to Friends</title>
+<style>
+/* Companion piece to Global Unrest Throughlines, same cyanotype/blueline
+   palette and type family, but laid out as a plain letter rather than a
+   survey document: no title-block, no numbered-line margin, no register
+   table — just a dateline, a greeting, continuous prose, a set of queries
+   set apart, and a signature. */
+:root{
+  --bg:#e8eef1; --panel:#ffffff; --panel-2:#f3f6f3; --ink:#1c3347; --ink-dim:#536b7a;
+  --line:#b9cdd6; --flag:#b5661a;
+  --display:'Newsreader',Georgia,serif;
+  --body:'IBM Plex Sans','Helvetica Neue',Arial,sans-serif;
+  --mono:'IBM Plex Mono','SF Mono',Consolas,monospace;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#142a3e; --panel:#1c3a52; --panel-2:#17324a; --ink:#edf1ec; --ink-dim:#a3bbca;
+    --line:#3f647f; --flag:#e8a33d; color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#142a3e; --panel:#1c3a52; --panel-2:#17324a; --ink:#edf1ec; --ink-dim:#a3bbca;
+  --line:#3f647f; --flag:#e8a33d; color-scheme:dark;
+}
+
+*{box-sizing:border-box;}
+html,body{margin:0;}
+body{
+  background:var(--bg); color:var(--ink); font-family:var(--body);
+  padding-left:max(16px, env(safe-area-inset-left,0px));
+  padding-right:max(16px, env(safe-area-inset-right,0px));
+}
+.sheet{max-width:600px;margin:0 auto;padding-block:48px 80px;}
+
+.dateline{font-family:var(--mono);font-size:11.5px;color:var(--ink-dim);
+  display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-bottom:34px;}
+
+h1{font-family:var(--display);font-style:italic;font-weight:500;
+  font-size:clamp(22px,5vw,28px);line-height:1.3;margin:0 0 6px;text-wrap:balance;}
+.subtitle{font-size:14px;color:var(--ink-dim);max-width:44ch;line-height:1.55;margin-bottom:40px;}
+
+.greeting{font-family:var(--display);font-style:italic;font-size:19px;margin-bottom:22px;}
+
+article p{font-size:16px;line-height:1.8;max-width:58ch;margin:0 0 20px;}
+article strong{color:var(--ink);}
+
+.queries{
+  margin:38px 0;padding:26px 24px;background:var(--panel);border:1px solid var(--line);
+  border-left-width:3px;border-left-color:var(--flag);
+}
+.queries .lead{font-size:14.5px;color:var(--ink-dim);margin:0 0 16px;max-width:52ch;line-height:1.6;}
+.queries ol{margin:0;padding:0;list-style:none;counter-reset:q;}
+.queries li{
+  counter-increment:q;position:relative;padding-left:30px;margin-bottom:16px;
+  font-size:15.5px;line-height:1.65;max-width:52ch;
+}
+.queries li:last-child{margin-bottom:0;}
+.queries li::before{
+  content:counter(q);position:absolute;left:0;top:1px;width:20px;text-align:right;
+  font-family:var(--mono);font-size:12px;color:var(--flag);
+}
+
+.valediction{font-family:var(--display);font-style:italic;font-size:16px;line-height:1.6;
+  margin-top:40px;max-width:50ch;}
+.signature{font-family:var(--display);font-style:italic;font-size:18px;margin-top:18px;}
+
+footer{margin-top:56px;padding-top:16px;border-top:1px solid var(--line);
+  font-family:var(--mono);font-size:11px;color:var(--ink-dim);line-height:1.7;}
+footer a{color:var(--ink-dim);}
+
+@media (max-width:480px){
+  .dateline{flex-direction:column;gap:4px;}
+}
+</style>
+
+<div class="sheet">
+
+  <div class="dateline">
+    <span>Iowa, October 2026</span>
+    <span>for the Midwest, and for Iowa Yearly Meeting (Conservative)</span>
+  </div>
+
+  <h1>A Letter to Friends</h1>
+  <div class="subtitle">On active objection, and the question Richmond asked in 1968 &mdash; a companion piece to <em>Global Unrest Throughlines</em>, written for a meeting rather than a reader.</div>
+
+  <div class="greeting">Dear Friends,</div>
+
+  <article>
+    <p>I'm writing from Iowa, where I came back in the summer of 2017 after forty years in Indianapolis, in research on infant lung disease and development. Before that I was a boarding student at Scattergood Friends School, a working farm school near West Branch, where plowing, chores, and sitting in silence together were taught as the same practice. For about ten years now I've put a blog post into the world several times a week &mdash; first to keep a record, increasingly to ask myself, in public, whether what I'm doing still answers the question Richmond asked me in 1968.</p>
+
+    <p>I was seventeen that October, a student delegate at the gathering in Richmond that produced what Friends came to call the Richmond Declaration on the draft. A generation of Friends who had spent their energy defending each person's right to claim conscientious-objector status &mdash; a privilege, granted case by case, to whoever was willing to ask for it &mdash; moved instead toward calling for the abolition of conscription itself. It was a shift from personal exemption to structural objection: not <em>spare me</em>, but <em>this whole machinery is wrong</em>. I registered for the draft anyway that November, the law being the law, and wrote in my journal that night: &ldquo;Registered, but not convinced!&rdquo; I returned my registration certificate to the draft board two months later. By February of 1972 I had broken with Selective Service entirely, by letter.</p>
+
+    <p>I set all this down not because it was dramatic &mdash; mostly it wasn't &mdash; but because it set the shape of a question I've been answering, in different vocabularies, ever since. Is the right response to an unjust system to ask for your own exemption from it, to refuse to cooperate with the system itself, or to try to build something else in its place? Richmond's answer, for the draft, was: some of each, but mostly the third. I've come to think that's close to the answer for almost everything since.</p>
+
+    <p>For most of the years in between, I was doing research on how infant lungs develop and fail, which doesn't sound like a continuation of that question and mostly wasn't meant as one. But the earliest version of it, before Indianapolis settled into forty years, was a year at the Friends Volunteer Service Mission in the inner city there, in the early 1970s &mdash; my first experience of what I'd now call mutual aid, long before I had that word for it.</p>
+
+    <p>When I retired and came home to Iowa in 2017, the question came back with me. I spent three years working alongside Ronnie James at Des Moines Mutual Aid, which is where a lot of what follows actually started. In September 2018 I walked ninety-four miles along the route of the Dakota Access Pipeline, from Des Moines to Fort Dodge, with a small group of Native and non-Native people on the First Nation&ndash;Farmer Climate Unity March &mdash; eight days meant less for covering ground than for the two groups to spend time together and find out what we actually had in common. I should say plainly, since Friends value plain speech: I have never been to Standing Rock itself. What I've done is write, in solidarity, from Iowa &mdash; a smaller thing, and I try not to let the writing imply otherwise.</p>
+
+    <p>That march is most of why I now sit on the planning committee of the Decolonial Repair Network, which my friends Sikowis Nobiss and Eric Anglada started to support the Great Plains Action Society, the Indigenous-led organization Sikowis leads. I've put in work hours on the acre of land GPAS recently acquired in downtown Iowa City for its Urban Resilience Hub &mdash; the kind of literal, physical land return that &ldquo;LANDBACK&rdquo; can otherwise stay an abstraction about.</p>
+
+    <p>The same question keeps showing up in what I write about now &mdash; the climate work, Gaza and Palestine, the police and immigration crackdowns of the last two years. None of these are new topics for a Quaker to care about. What I've tried to do, especially since I started writing as New Conscientious Objector and now at Channels Into Knowledge, is name the thread connecting them plainly, so it stops reading like a list of separate causes and starts reading like one practice applied in several places.</p>
+
+    <p>I call that practice <strong>active objection</strong>, and I choose the words carefully. Not &ldquo;resistance&rdquo; &mdash; resistance implies I'm a combatant, squared off against an opponent, and that has never been quite true of anything I've actually done. Active objection is conscientious objection extended outward: nonviolence, mutual aid, solidarity with Indigenous land return, applied to whatever the current machinery turns out to be &mdash; a draft, a pipeline, a blockade, a border, a siege. It is witnessing, documenting, feeding people, returning land, and declining to cooperate with what I judge wrong, without claiming more credit for it than it deserves.</p>
+
+    <p>I write this especially for Friends in the Midwest, and for Iowa Yearly Meeting (Conservative) in particular, because ours is a tradition that has mostly declined to perform its testimonies for an audience &mdash; we sit in silence, we wait for the Spirit to move someone or no one, and whatever gets said tends to get said plainly or not at all. That reticence is a gift, but it can also let the Peace Testimony stay a form of words rather than a set of actual commitments. Richmond didn't ask Friends to feel strongly about war. It asked what, specifically, they would and would not do. I think that's still the right question, for the draft and for everything since.</p>
+  </article>
+
+  <div class="queries">
+    <p class="lead">A few queries, in the old form, for sitting with rather than answering quickly:</p>
+    <ol>
+      <li>Where in my own life is the line between asking for my own exemption and refusing to cooperate with the system itself?</li>
+      <li>What am I actually doing, in hours and dollars and presence &mdash; and not only what I believe?</li>
+      <li>Whose land, whose labor, or whose risk is underneath the comfort I haven't examined?</li>
+      <li>When I speak for a cause I am not part of, am I amplifying, or am I standing in the way?</li>
+      <li>Is there a form of active objection available to me now that I have been calling someone else's resistance, and leaving to them?</li>
+    </ol>
+  </div>
+
+  <div class="valediction">In the Life and power that takes away the occasion of all wars,</div>
+  <div class="signature">Jeff Kisling</div>
+
+  <footer>
+    Companion to <em>Global Unrest Throughlines</em> and <em>Global Unrest, Surveyed</em> &middot; the Richmond Declaration account, the journal entry, and the active-objection framing are drawn from those pieces and the fact sheets at kislingjeff-oss.github.io/GlobalUnrestFactSheets
+  </footer>
+
+</div>
